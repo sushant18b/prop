@@ -23,8 +23,8 @@ app.use((req, res, next) => {
 async function fetchAccessToken() {
   try {
     const body = {
-      username: "admin",
-      password: "admin",
+      username: "office3",
+      password: "user@123",
       provider: "db",
       refresh: true,
     }
@@ -59,9 +59,9 @@ async function fetchGuestToken() {
       ],
       rls: [],
       user: {
-        username: "Sushant",
-        first_name: "Behera",
-        last_name: "Office3",
+        username: "office3",
+        first_name: "Sushant",
+        last_name: "Behera",
       },
     }
     const response = await fetch(
