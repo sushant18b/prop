@@ -1,24 +1,12 @@
 import express from "express"
 import fetch from "node-fetch"
 
-const express = require('express');
 const PORT = 3001
 const app = express()
-
-app.use((req, res, next) => {
-    res.setHeader('X-Frame-Options', 'DENY');
-    next();
-});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
-
-app.use((req, res, next) => {
-    res.setHeader('X-Frame-Options', 'DENY');
-    next();
-});
-
 
 async function fetchAccessToken() {
   try {
@@ -54,7 +42,7 @@ async function fetchGuestToken() {
       resources: [
         {
           type: "dashboard",
-          id: "9faa52d0-3526-4f63-bf48-90a7ffc065fd",
+          id: "090ef4c7-d67b-4e94-ad55-e8f420617c20",
         },
       ],
       rls: [],
