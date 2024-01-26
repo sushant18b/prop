@@ -11,10 +11,10 @@ app.listen(PORT, () => {
 async function fetchAccessToken() {
   try {
     const body = {
-      username: "office3",
-      password: "user@123",
-      provider: "db",
-      refresh: true,
+      "username": "office3",
+      "password": "user@123",
+      "provider": "db",
+      "refresh": true,
     }
 
     const response = await fetch(
@@ -39,17 +39,17 @@ async function fetchGuestToken() {
   const accessToken = await fetchAccessToken()
   try {
     const body = {
-      resources: [
+      "resources": [
         {
-          type: "dashboard",
-          id: "9faa52d0-3526-4f63-bf48-90a7ffc065fd",
+          "type": "dashboard",
+          "id": "9faa52d0-3526-4f63-bf48-90a7ffc065fd",
         },
       ],
-      rls: [],
-      user: {
-        username: "office3",
-        first_name: "Sushant",
-        last_name: "Behera",
+      "rls": [],
+      "user": {
+        "username": "office3",
+        "first_name": "Sushant",
+        "last_name": "Behera",
       },
     }
     const response = await fetch(
