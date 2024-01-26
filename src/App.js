@@ -13,7 +13,7 @@ function App() {
     const embed = async () => {
       await embedDashboard({
         id: "9faa52d0-3526-4f63-bf48-90a7ffc065fd", // given by the Superset embedding UI
-        supersetDomain: "https://propcheckup-u11274.vm.elestio.app/",
+        supersetDomain: "https://propcheckup-u11274.vm.elestio.app",
         mountPoint: document.getElementById("dashboard"), // html element in which iframe render
         fetchGuestToken: () => getToken(),
         dashboardUiConfig: {

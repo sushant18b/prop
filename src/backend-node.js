@@ -53,7 +53,7 @@ async function fetchGuestToken() {
       },
     }
     const response = await fetch(
-      "https://propcheckup-u11274.vm.elestio.app/api/v1/security/guest_token",
+      "https://propcheckup-u11274.vm.elestio.app/api/v1/security/guest_token/",
       {
         method: "POST",
         body: JSON.stringify(body),
