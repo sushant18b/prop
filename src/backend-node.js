@@ -42,7 +42,7 @@ async function fetchGuestToken() {
       resources: [
         {
           type: "dashboard",
-          id: "090ef4c7-d67b-4e94-ad55-e8f420617c20",
+          id: "9faa52d0-3526-4f63-bf48-90a7ffc065fd",
         },
       ],
       rls: [],
