@@ -4,7 +4,7 @@ import "./App.css"
 
 function App() {
   const getToken = async () => {
-    const response = await fetch("https://goldfish-app-hjvvt.ondigitalocean.app/guest-token")
+    const response = await fetch("/guest-token")
     const token = await response.json()
     return token
   }
