@@ -70,7 +70,7 @@ async function fetchGuestToken() {
   }
 }
 
-app.get("https://goldfish-app-hjvvt.ondigitalocean.app/guest-token", async (req, res) => {
+app.get("/guest-token", async (req, res) => {
   const token = await fetchGuestToken()
   res.json(token)
 })
