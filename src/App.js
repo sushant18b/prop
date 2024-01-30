@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>How to Embed Superset Dashboard into React</h1>
+      <h1>How to Embed Superset Dashboard into React1</h1>
       <div id="dashboard" />
     </div>
   )
